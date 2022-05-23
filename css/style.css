@@ -1,0 +1,201 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+	padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+a,
+dd {
+	margin: 0;
+}
+
+@font-face {
+	font-family: 'Molodost';
+	src: local('Molodo-font'), local('MolodofontRegular'), url('/fonts/Molodo-font.woff2') format('woff2'), url('/fonts/Molodo-font.woff') format('woff'), url('/fonts/Molodo-font.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+	background: #FFFAF1;
+	color: #8A7C63;
+	font-family: 'Molodost';
+	font-size: 24;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+	list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article>*+* {
+	margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+
+/*----------------------------------------------------------------------------*/
+
+
+
+
+.header {
+	padding: 3;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.container {
+	width: 1445px;
+	/*позиционирование по центру*/
+	margin: 0 auto;
+}
+
+.header__wrapper {
+	height: 65px;
+	margin-top: 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav {
+	margin-top: 2px;
+	display: flex;
+}
+
+.nav__link {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-right: 50px;
+	text-decoration: none;
+	color: #8A7C63;
+	font-size: 24px;
+}
+
+.nav__link:last-child {
+	margin: 0;
+}
+
+.header__tel {
+	margin: 0;
+	display: flex;
+	justify-content: flex-end;
+	color: #8A7C63;
+
+}
+
+.tel {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 22px;
+	/* margin: 0; */
+
+	text-decoration: none;
+	color: #8A7C63;
+	font-size: 32px;
+
+	border: 2px solid #DA96B0;
+	border-radius: 100px;
+}
+/* /header end */
+
+/* /intro start */
+
+.intro {
+	margin: 196px 0 0 0;
+}
+
+.intro__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.intro__block {
+}
+
+.intro__bg-img {
+	
+}
+
+.scroll-info__block {
+}
+
+.scroll__card {
+}
+
+.info__img {
+}
+
+.info__title {
+	display: inline;
+}
+
+.info__btn {
+	background-color: #B9597E;
+	height: 30px;
+	width: 70px;
+	
+
+}
