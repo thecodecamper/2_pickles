@@ -39,7 +39,8 @@ dd {
 
 /* Выставляем основные настройки по-умолчанию для body */
 body {
-	min-height: 100vh;
+	height: 710px;
+
 	scroll-behavior: smooth;
 	text-rendering: optimizeSpeed;
 	line-height: 1.5;
@@ -172,30 +173,57 @@ select {
 	justify-content: space-between;
 }
 
-.intro__block {
-}
-
-.intro__bg-img {
-	
-}
-
 .scroll-info__block {
+	height: 710px;
+	overflow: auto;
+	scrollbar-width: thin;
+	scrollbar-color: #FAF1E1;
+}
+
+.scroll-info__block::-webkit-scrollbar {
+	width: 10px;
+}
+
+.scroll-info__block::-webkit-scrollbar-track {
+	background-color: #FAF1E1;
+	border-radius: 100px;
+}
+
+.scroll-info__block::-webkit-scrollbar-thumb {
+	height: 124px;
+	border-radius: 100px;
+	background-color: #8A7C63;
+	box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
 }
 
 .scroll__card {
-}
-
-.info__img {
+	background-color: #F4E9D5;
+	box-shadow: 0px 39px 36px -31px rgba(138, 124, 99, 0.15);
+	border-radius: 15px;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	padding: 15px;
+	width: 340px;
+	height: 236px;
+	font-size: 24px;
 }
 
 .info__title {
 	display: inline;
+	font-size: 24px;
+	font-family: 'Caveat';
 }
 
 .info__btn {
-	background-color: #B9597E;
 	height: 30px;
 	width: 70px;
+	margin-left: 37px;
 	
 
+}
+
+.info__tt-btn {
+	display: flex;
+	margin-top: 15px;
+	margin-left: 20px;
 }
