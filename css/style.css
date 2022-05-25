@@ -160,6 +160,7 @@ select {
 	border: 2px solid #DA96B0;
 	border-radius: 100px;
 }
+
 /* /header end */
 
 /* /intro start */
@@ -174,6 +175,7 @@ select {
 }
 
 .scroll-info__block {
+	width: 350px;
 	height: 710px;
 	overflow: auto;
 	scrollbar-width: thin;
@@ -197,19 +199,20 @@ select {
 }
 
 .scroll__card {
-	background-color: #F4E9D5;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	background: linear-gradient(183.88deg, #F4E9D5 -55.9%, #FFEED0 -55.88%, #FFFAF1 125.78%);
 	box-shadow: 0 39px 36px -31px rgba(138, 124, 99, 0.15);
 	border-radius: 15px;
-	margin-bottom: 20px;
-	margin-right: 10px;
+	margin: 0 10px 20px 10px;
 	padding: 15px;
-	width: 340px;
+	width: 320px;
 	height: 236px;
 	font-size: 24px;
 }
 
 .info__title {
 	display: inline;
+	width: 173px;
 	font-size: 24px;
 	font-family: 'Caveat';
 }
@@ -218,12 +221,9 @@ select {
 	height: 30px;
 	width: 70px;
 	margin-left: 37px;
-	
-
 }
 
 .info__tt-btn {
 	display: flex;
 	margin-top: 15px;
-	margin-left: 20px;
 }
